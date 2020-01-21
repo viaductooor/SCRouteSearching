@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d8b2341-f9c2-436e-9545-c24bd9fa7662" name="Default Changelist" comment="" />
+    <list default="true" id="2d8b2341-f9c2-436e-9545-c24bd9fa7662" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lab1505/SCRouteSearching.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lab1505/SCRouteSearching.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +17,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -30,7 +36,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/target/classes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -59,6 +65,8 @@
     <option name="myCommands">
       <command value="mvn clean" />
       <command value="mvn install" />
+      <command value="git -version" />
+      <command value="git" />
     </option>
   </component>
   <component name="RunManager" selected="Application.SCRouteSearching">
@@ -84,53 +92,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <module name="SCRouteSearching" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <module name="SCRouteSearching" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -188,29 +149,29 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579144587841" />
-    <state x="740" y="278" key="FileChooserDialogImpl" timestamp="1579594032670">
+    <state x="740" y="278" key="FileChooserDialogImpl" timestamp="1579595559841">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1579594032670" />
-    <state width="1921" height="229" key="GridCell.Tab.0.bottom" timestamp="1579594823851">
+    <state x="740" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1579595559841" />
+    <state width="1921" height="229" key="GridCell.Tab.0.bottom" timestamp="1579600529056">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="229" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579594823851" />
+    <state width="1921" height="229" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579600529056" />
     <state width="958" height="159" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579342470497" />
-    <state width="1921" height="229" key="GridCell.Tab.0.center" timestamp="1579594823851">
+    <state width="1921" height="229" key="GridCell.Tab.0.center" timestamp="1579600529055">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="229" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579594823851" />
+    <state width="1921" height="229" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579600529055" />
     <state width="958" height="159" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579342470497" />
-    <state width="1921" height="229" key="GridCell.Tab.0.left" timestamp="1579594823851">
+    <state width="1921" height="229" key="GridCell.Tab.0.left" timestamp="1579600529055">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="229" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579594823851" />
+    <state width="1921" height="229" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579600529055" />
     <state width="958" height="159" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579342470497" />
-    <state width="1921" height="229" key="GridCell.Tab.0.right" timestamp="1579594823851">
+    <state width="1921" height="229" key="GridCell.Tab.0.right" timestamp="1579600529056">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="229" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579594823851" />
+    <state width="1921" height="229" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579600529056" />
     <state width="958" height="159" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579342470497" />
     <state width="1921" height="202" key="GridCell.Tab.1.bottom" timestamp="1579594823848">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -240,9 +201,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="463" y="165" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579256003340" />
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1579256083401">
+    <state x="754" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579600521519">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="754" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1579600521519" />
+    <state x="334" y="224" key="new project wizard" timestamp="1579595586677">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="334" y="224" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1579595586677" />
+    <state x="822" y="118" width="672" height="677" key="run.anything.popup" timestamp="1579600535480">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="822" y="118" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1579600535480" />
     <state x="616" y="240" width="672" height="677" key="run.anything.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579256083401" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1579256012961">
       <screen x="0" y="0" width="1920" height="1040" />

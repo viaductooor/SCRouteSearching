@@ -32,16 +32,35 @@ public class SCRouteSearching {
     private long time;
 
     public void configure() {
+        // length of time for searching,
         searchRange = 60;
+
+        // node file
         nodesUrl = "files/nodes.csv";
+
+        // openstreetmap json file
         mapJsonUrl = "files/manhattan-map.json";
+
+        // kml boundary file
         mapBoundaryUrl = "files/manhattan-boundary.kml";
+
+        // link file, for loading link states of the map
         linksUrl = "files/2010.10.5 5am links.csv";
+
+        // contains task possibility of each spatiotemporal segment
         histiricalModelFile = "files/2016-6-1800.txt";
-        speedReduction = 4; // speed = maximum_speed/speedReduction
+
+        // speed = maximum_speed/speedReduction
+        speedReduction = 4;
+
+        // random seed for placing agents randomly on the map
         agentPlacementRandomSeed = 31;
+
+        // number of agents
         totalAgents = 1000;
-        time = 1464782404l; // 8:00 am utc
+
+        // time when start searching, utc, in seconds
+        time = 1464782404l; // 8:00 am
     }
 
     private void init() {
