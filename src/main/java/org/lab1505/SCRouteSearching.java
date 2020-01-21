@@ -72,14 +72,22 @@ public class SCRouteSearching {
         MapGraphConverter converter = new MapGraphConverter(cityMap);
         NodesFileInterpretor nfi = new NodesFileInterpretorDefaultImpl();
         LinksFileInterpretor lfi = new LinksFileInterpretorDefaultImpl();
-        realtimeNet = converter.readAndMatchLinks(linksUrl, nodesUrl, lfi, nfi);
+        realtimeNet = converter.readLinksWithoutMathing(linksUrl, nodesUrl, lfi, nfi);
     }
 
     private void run() {
         configure();
         init();
         MapWithData mwd = new MapWithData(cityMap);
-        ArrayList<Long> agentLocations = mwd.placeAgentsRandomly(totalAgents, agentPlacementRandomSeed);
+        SimpleDirectedGraph<Long,RealtimeNetEdge> m2 = new SimpleDirectedGraph<>(RealtimeNetEdge.class);
+        for(RealtimeNetEdge e:realtimeNet.edgeSet()){
+            BasicMapNode edgeSource = realtimeNet.getEdgeSource(e);
+            BasicMapNode edgeTarget = realtimeNet.getEdgeTarget(e);
+            m2.addVertex(edgeSource.id);
+            m2.addVertex(edgeTarget.id);
+            m2.addEdge(edgeSource.id,edgeTarget.id,e);
+        }
+        ArrayList<Long> agentLocations = mwd.placeAgentsRandomly(m2,totalAgents, agentPlacementRandomSeed);
         Map<Long, Double> heatMap = hmodel.getHeatMap(time);
         SearchAlgorithm.game(realtimeNet, agentLocations, heatMap, searchRange, 5, (graph, iteration) -> {
             CsvGraphWriter.write(graph, SearchAlgorithm.Marginal.class, new File("output/credit_output_" + iteration + ".csv"));

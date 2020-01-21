@@ -1,6 +1,11 @@
 package org.lab1505.map;
 
+import org.jgrapht.graph.SimpleDirectedGraph;
+import org.lab1505.credit.BasicMapNode;
+import org.lab1505.credit.RealtimeNetEdge;
+
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 /**
@@ -93,13 +98,16 @@ public class MapWithData {
         return Math.abs(x1 - x2) + Math.abs(y1 - y2);
     }
 
-    public ArrayList<Long> placeAgentsRandomly(int totalAgents, int agentPlacementRandomSeed) {
+    public ArrayList<Long> placeAgentsRandomly(SimpleDirectedGraph<Long, RealtimeNetEdge> graph, int totalAgents, int agentPlacementRandomSeed) {
         ArrayList<Long> agentLocations = new ArrayList();
-
+        List<Long> totalLocations = new ArrayList<>(graph.vertexSet());
         Random generator = new Random(agentPlacementRandomSeed);
         for (int i = 0; i < totalAgents; i++) {
-            Road road = map.roads().get(generator.nextInt(map.roads().size()));
-            agentLocations.add(road.from.id);
+            long rndNode = totalLocations.get(generator.nextInt(generator.nextInt(totalLocations.size())));
+            while(graph.outgoingEdgesOf(rndNode).size()<1){
+                rndNode = totalLocations.get(generator.nextInt(generator.nextInt(totalLocations.size())));
+            }
+            agentLocations.add(rndNode);
         }
         return agentLocations;
     }

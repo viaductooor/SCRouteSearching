@@ -3,6 +3,7 @@ package org.lab1505.credit;
 import com.opencsv.CSVReader;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.jgrapht.graph.SimpleDirectedGraph;
 import org.jgrapht.graph.SimpleDirectedWeightedGraph;
 import org.lab1505.fileUtils.LinksFileInterpretor;
 import org.lab1505.fileUtils.NodesFileInterpretor;
@@ -146,6 +147,49 @@ public class MapGraphConverter {
         return vertexSet;
     }
 
+    public SimpleDirectedGraph<BasicMapNode, RealtimeNetEdge> readLinksWithoutMathing(
+            String linksUrl, String nodesUrl, LinksFileInterpretor lfi, NodesFileInterpretor nfi){
+        SimpleDirectedGraph<BasicMapNode,RealtimeNetEdge> linksMap = new SimpleDirectedGraph<>(RealtimeNetEdge.class);
+        Map<Long, double[]> nodesMap = new HashMap<>();
+        try (CSVReader nodesReader = new CSVReader(new FileReader(nodesUrl));
+             CSVReader linksReader = new CSVReader(new FileReader(linksUrl))) {
+            for (int i = 0; i < nfi.skipHeadingLines(); i++) {
+                nodesReader.readNext();
+            }
+            String[] line = null;
+            while ((line = nodesReader.readNext()) != null) {
+                long id = nfi.getId(line);
+                double lat = nfi.getLat(line);
+                double lon = nfi.getLon(line);
+                nodesMap.put(id, new double[]{lat, lon});
+            }
+            for (int i = 0; i < lfi.skipHeadingLines(); i++) {
+                linksReader.readNext();
+            }
+            while ((line = linksReader.readNext()) != null) {
+                long startNodeId = lfi.getInitNode(line);
+                long endNodeId = lfi.getEndNode(line);
+                if (nodesMap.containsKey(startNodeId) && nodesMap.containsKey(endNodeId) && startNodeId != endNodeId) {
+                    double length = lfi.getLength(line);
+                    int numLanes = lfi.getNumLanes(line);
+                    double initTraveltime = lfi.getInitTraveltime(line);
+                    double otherVolume = lfi.getOtherVolume(line);
+                    RealtimeNetEdge edge = new RealtimeNetEdge(length, numLanes, initTraveltime, otherVolume);
+                    double traveltime = computeTraveltime(otherVolume,0,numLanes,length);
+                    edge.setTraveltime(traveltime);
+                    BasicMapNode startNode = new BasicMapNode(startNodeId, nodesMap.get(startNodeId)[0], nodesMap.get(startNodeId)[1]);
+                    BasicMapNode endNode = new BasicMapNode(endNodeId, nodesMap.get(endNodeId)[0], nodesMap.get(endNodeId)[1]);
+                    linksMap.addVertex(startNode);
+                    linksMap.addVertex(endNode);
+                    linksMap.addEdge(startNode, endNode, edge);
+                }
+            }
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+        return linksMap;
+    }
+
     public SimpleDirectedWeightedGraph<BasicMapNode, RealtimeNetEdge> readAndMatchLinks(
             String linksUrl, String nodesUrl, LinksFileInterpretor lfi, NodesFileInterpretor nfi) {
         Map<Long, double[]> nodesMap = new HashMap<>();
@@ -193,5 +237,27 @@ public class MapGraphConverter {
         }
         SimpleDirectedWeightedGraph<BasicMapNode, RealtimeNetEdge> result = matchLinks(linksMap);
         return result;
+    }
+
+    private double computeVolumeIn(double taxiVolume, double otherVolume, int numLanes) {
+        double volumeIn = (taxiVolume + otherVolume) / numLanes;
+        if (volumeIn > 1569) {
+            volumeIn = 1569;
+        } else if (volumeIn < 4) {
+            volumeIn = 4;
+        }
+        return volumeIn;
+    }
+
+    private double computeTraveltime(double otherVolume, double taxiVolume, int numLanes, double length) {
+        double volumeIn = computeVolumeIn(taxiVolume, otherVolume, numLanes);
+        double traveltime;
+
+        if (volumeIn < 785) {
+            traveltime = 15 * length * (687.0 - Math.sqrt(473967 - 600 * volumeIn)) / (88 * volumeIn);
+        } else {
+            traveltime = 15 * length * (687.0 + Math.sqrt(600 * volumeIn - 468033)) / (88 * 1570 - 88 * volumeIn);
+        }
+        return traveltime;
     }
 }

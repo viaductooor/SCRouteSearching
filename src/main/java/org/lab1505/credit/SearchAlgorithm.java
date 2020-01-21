@@ -29,7 +29,13 @@ public class SearchAlgorithm {
             long from = map.getEdgeSource(e).id;
             long to = map.getEdgeTarget(e).id;
             double otherVolume = e.taxiVolume + e.otherVolume;
-            double tripPossibility = heatMap.get(from) + heatMap.get(to);
+            double tripPossibility = 0.001;
+            if (heatMap.containsKey(from)) {
+                tripPossibility += heatMap.get(from);
+            }
+            if (heatMap.containsKey(to)) {
+                tripPossibility += heatMap.get(to);
+            }
             marginalGraph.addVertex(from);
             marginalGraph.addVertex(to);
             marginalGraph.addEdge(from, to, new Marginal(otherVolume, tripPossibility, e.length, e.numLanes, e.traveltime));

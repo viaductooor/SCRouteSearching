@@ -4,6 +4,16 @@
     <list default="true" id="2d8b2341-f9c2-436e-9545-c24bd9fa7662" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/lab1505/SCRouteSearching.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lab1505/SCRouteSearching.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lab1505/credit/MapGraphConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lab1505/credit/MapGraphConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lab1505/credit/SearchAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lab1505/credit/SearchAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lab1505/map/MapWithData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lab1505/map/MapWithData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/CSRouteSearching.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/lab1505/CSRouteSearching.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/lab1505/credit/MapGraphConverter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/lab1505/credit/MapGraphConverter$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/lab1505/credit/MapGraphConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/lab1505/credit/MapGraphConverter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/lab1505/credit/SearchAlgorithm$Marginal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/lab1505/credit/SearchAlgorithm$Marginal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/lab1505/credit/SearchAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/lab1505/credit/SearchAlgorithm.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +77,8 @@
       <command value="mvn install" />
       <command value="git -version" />
       <command value="git" />
+      <command value="git add ." />
+      <command value="git push origin master" />
     </option>
   </component>
   <component name="RunManager" selected="Application.SCRouteSearching">
@@ -126,7 +138,19 @@
       <option name="presentableId" value="Default" />
       <updated>1579134907414</updated>
     </task>
+    <task id="LOCAL-00001" summary="test">
+      <created>1579600552850</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1579600552850</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
   <component name="WindowStateProjectService">
     <state x="699" y="329" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1579135041493">
@@ -157,45 +181,45 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1579595559841" />
-    <state width="1921" height="229" key="GridCell.Tab.0.bottom" timestamp="1579600563470">
+    <state width="1921" height="202" key="GridCell.Tab.0.bottom" timestamp="1579616049117">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="229" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579600563470" />
+    <state width="1921" height="202" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579616049117" />
     <state width="958" height="159" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579342470497" />
-    <state width="1921" height="229" key="GridCell.Tab.0.center" timestamp="1579600563470">
+    <state width="1921" height="202" key="GridCell.Tab.0.center" timestamp="1579616049117">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="229" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579600563470" />
+    <state width="1921" height="202" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579616049117" />
     <state width="958" height="159" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579342470497" />
-    <state width="1921" height="229" key="GridCell.Tab.0.left" timestamp="1579600563470">
+    <state width="1921" height="202" key="GridCell.Tab.0.left" timestamp="1579616049117">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="229" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579600563470" />
+    <state width="1921" height="202" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579616049117" />
     <state width="958" height="159" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579342470497" />
-    <state width="1921" height="229" key="GridCell.Tab.0.right" timestamp="1579600563470">
+    <state width="1921" height="202" key="GridCell.Tab.0.right" timestamp="1579616049117">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="229" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579600563470" />
+    <state width="1921" height="202" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579616049117" />
     <state width="958" height="159" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579342470497" />
-    <state width="1921" height="202" key="GridCell.Tab.1.bottom" timestamp="1579594823848">
+    <state width="1921" height="202" key="GridCell.Tab.1.bottom" timestamp="1579616049117">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="202" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579594823848" />
+    <state width="1921" height="202" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579616049117" />
     <state width="1921" height="356" key="GridCell.Tab.1.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579342470493" />
-    <state width="1921" height="202" key="GridCell.Tab.1.center" timestamp="1579594823848">
+    <state width="1921" height="202" key="GridCell.Tab.1.center" timestamp="1579616049117">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="202" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579594823848" />
+    <state width="1921" height="202" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579616049117" />
     <state width="1921" height="356" key="GridCell.Tab.1.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579342470492" />
-    <state width="1921" height="202" key="GridCell.Tab.1.left" timestamp="1579594823848">
+    <state width="1921" height="202" key="GridCell.Tab.1.left" timestamp="1579616049117">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="202" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579594823848" />
+    <state width="1921" height="202" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579616049117" />
     <state width="1921" height="356" key="GridCell.Tab.1.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579342470492" />
-    <state width="1921" height="202" key="GridCell.Tab.1.right" timestamp="1579594823848">
+    <state width="1921" height="202" key="GridCell.Tab.1.right" timestamp="1579616049117">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="202" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579594823848" />
+    <state width="1921" height="202" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579616049117" />
     <state width="1921" height="356" key="GridCell.Tab.1.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579342470492" />
     <state x="558" y="327" key="Maven.ArtifactSearchDialog" timestamp="1579135247767">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -222,5 +246,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579256012961" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/lab1505/credit/MaxCreditWithLimit.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/lab1505/credit/SearchAlgorithm.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/lab1505/credit/SearchAlgorithm.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
