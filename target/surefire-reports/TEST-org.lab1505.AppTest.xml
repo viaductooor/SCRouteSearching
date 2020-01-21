@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.lab1505.AppTest" time="0.033" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.class.path" value="E:\projects\transportation\CSRouteSearching\target\test-classes;E:\projects\transportation\CSRouteSearching\target\classes;C:\Users\viadu\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\viadu\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\viadu\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\viadu\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\viadu\.m2\repository\me\tongfei\progressbar\0.7.3\progressbar-0.7.3.jar;C:\Users\viadu\.m2\repository\org\jline\jline\3.10.0\jline-3.10.0.jar;C:\Users\viadu\.m2\repository\org\fusesource\jansi\jansi\1.17.1\jansi-1.17.1.jar;C:\Users\viadu\.m2\repository\com\google\guava\guava\27.1-jre\guava-27.1-jre.jar;C:\Users\viadu\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\viadu\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\viadu\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\viadu\.m2\repository\org\checkerframework\checker-qual\2.5.2\checker-qual-2.5.2.jar;C:\Users\viadu\.m2\repository\com\google\errorprone\error_prone_annotations\2.2.0\error_prone_annotations-2.2.0.jar;C:\Users\viadu\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\viadu\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.17\animal-sniffer-annotations-1.17.jar;C:\Users\viadu\.m2\repository\net\iakovlev\timeshape\2018d.6\timeshape-2018d.6.jar;C:\Users\viadu\.m2\repository\net\iakovlev\geojson-proto\1.0.0\geojson-proto-1.0.0.jar;C:\Users\viadu\.m2\repository\com\google\protobuf\protobuf-java\3.4.0\protobuf-java-3.4.0.jar;C:\Users\viadu\.m2\repository\com\esri\geometry\esri-geometry-api\2.2.1\esri-geometry-api-2.2.1.jar;C:\Users\viadu\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.6\jackson-core-2.9.6.jar;C:\Users\viadu\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\viadu\.m2\repository\org\apache\commons\commons-compress\1.18\commons-compress-1.18.jar;C:\Users\viadu\.m2\repository\com\github\luben\zstd-jni\1.3.7-1\zstd-jni-1.3.7-1.jar;C:\Users\viadu\.m2\repository\org\jgrapht\jgrapht-core\1.3.1\jgrapht-core-1.3.1.jar;C:\Users\viadu\.m2\repository\org\jheaps\jheaps\0.10\jheaps-0.10.jar;C:\Users\viadu\.m2\repository\com\opencsv\opencsv\4.5\opencsv-4.5.jar;C:\Users\viadu\.m2\repository\org\apache\commons\commons-lang3\3.8.1\commons-lang3-3.8.1.jar;C:\Users\viadu\.m2\repository\org\apache\commons\commons-text\1.3\commons-text-1.3.jar;C:\Users\viadu\.m2\repository\commons-beanutils\commons-beanutils\1.9.3\commons-beanutils-1.9.3.jar;C:\Users\viadu\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\viadu\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\viadu\.m2\repository\org\apache\commons\commons-collections4\4.2\commons-collections4-4.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\viadu\AppData\Local\Temp\surefire2341479267240250355\surefirebooter5554878746141992060.jar C:\Users\viadu\AppData\Local\Temp\surefire2341479267240250355 2020-01-17T18-14-51_781-jvmRun1 surefire6546203322526133525tmp surefire_07447233869724425289tmp"/>
+    <property name="surefire.test.class.path" value="E:\projects\transportation\CSRouteSearching\target\test-classes;E:\projects\transportation\CSRouteSearching\target\classes;C:\Users\viadu\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\viadu\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\viadu\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\viadu\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\viadu\.m2\repository\me\tongfei\progressbar\0.7.3\progressbar-0.7.3.jar;C:\Users\viadu\.m2\repository\org\jline\jline\3.10.0\jline-3.10.0.jar;C:\Users\viadu\.m2\repository\org\fusesource\jansi\jansi\1.17.1\jansi-1.17.1.jar;C:\Users\viadu\.m2\repository\com\google\guava\guava\27.1-jre\guava-27.1-jre.jar;C:\Users\viadu\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\viadu\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\viadu\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\viadu\.m2\repository\org\checkerframework\checker-qual\2.5.2\checker-qual-2.5.2.jar;C:\Users\viadu\.m2\repository\com\google\errorprone\error_prone_annotations\2.2.0\error_prone_annotations-2.2.0.jar;C:\Users\viadu\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\viadu\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.17\animal-sniffer-annotations-1.17.jar;C:\Users\viadu\.m2\repository\net\iakovlev\timeshape\2018d.6\timeshape-2018d.6.jar;C:\Users\viadu\.m2\repository\net\iakovlev\geojson-proto\1.0.0\geojson-proto-1.0.0.jar;C:\Users\viadu\.m2\repository\com\google\protobuf\protobuf-java\3.4.0\protobuf-java-3.4.0.jar;C:\Users\viadu\.m2\repository\com\esri\geometry\esri-geometry-api\2.2.1\esri-geometry-api-2.2.1.jar;C:\Users\viadu\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.6\jackson-core-2.9.6.jar;C:\Users\viadu\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\viadu\.m2\repository\org\apache\commons\commons-compress\1.18\commons-compress-1.18.jar;C:\Users\viadu\.m2\repository\com\github\luben\zstd-jni\1.3.7-1\zstd-jni-1.3.7-1.jar;C:\Users\viadu\.m2\repository\org\jgrapht\jgrapht-core\1.3.1\jgrapht-core-1.3.1.jar;C:\Users\viadu\.m2\repository\org\jheaps\jheaps\0.10\jheaps-0.10.jar;C:\Users\viadu\.m2\repository\com\opencsv\opencsv\4.5\opencsv-4.5.jar;C:\Users\viadu\.m2\repository\org\apache\commons\commons-lang3\3.8.1\commons-lang3-3.8.1.jar;C:\Users\viadu\.m2\repository\org\apache\commons\commons-text\1.3\commons-text-1.3.jar;C:\Users\viadu\.m2\repository\commons-beanutils\commons-beanutils\1.9.3\commons-beanutils-1.9.3.jar;C:\Users\viadu\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\viadu\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\viadu\.m2\repository\org\apache\commons\commons-collections4\4.2\commons-collections4-4.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\viadu"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_181\jre"/>
+    <property name="basedir" value="E:\projects\transportation\CSRouteSearching"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\viadu\AppData\Local\Temp\surefire2341479267240250355\surefirebooter5554878746141992060.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_181\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_181-b13"/>
+    <property name="user.name" value="viadu"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_181\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\viadu\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\viadu\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_181"/>
+    <property name="user.dir" value="E:\projects\transportation\CSRouteSearching"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="idea.version2019.3.1" value="true"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Perl64\site\bin;C:\Perl64\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\DevelopProgramFiles\Git\cmd;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;D:\DevelopProgramFiles\putty\;C:\Program Files\Pandoc\;C:\Program Files\nodejs\;C:\Program Files\MiKTeX 2.9\miktex\bin\x64\;D:\DevelopProgramFiles\Ruby25-x64\bin;C:\Users\viadu\AppData\Local\Microsoft\WindowsApps;D:\DevelopProgramFiles\Microsoft VS Code\bin;D:\DevelopProgramFiles\apache-maven-3.6.0\bin;D:\DevelopProgramFiles\IntelliJ IDEA Community Edition 2018.3.4\bin;;D:\DevelopProgramFiles\mongo\bin;C:\Program Files\Java\jdk1.8.0_181\bin;D:\DevelopProgramFiles\Anaconda3;C:\Users\viadu\AppData\Roaming\npm;C:\Program Files\nodejs;C:\Program Files (x86)\CodeBlocks\MinGW\bin;C:\Users\viadu\AppData\Local\Pandoc\;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.181-b13"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_181\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="shouldAnswerWithTrue" classname="org.lab1505.AppTest" time="0.002"/>
+</testsuite>
